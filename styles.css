@@ -1,0 +1,155 @@
+/* Reset + Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --color-primary: #9e0e92;
+    --color-secondary: hsl(200, 70%, 50%);
+    --color-accent: rgba(37, 99, 235, 0.1);
+
+    --color-text: #121314;
+    --color-bg: #ccdfd4;
+    --color-white: #7ab978;
+
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.953rem;
+
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+h1, h2, h3 {
+    color: var(--color-primary);
+    line-height: normal;
+    margin-bottom: var(--space-sm);
+
+}
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-md);
+
+    
+}
+
+/* Navigation */
+nav {
+    background: var(--color-primary);
+    padding: var(--space-sm);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    list-style: none;
+
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--text-lg);
+    transition: 0.3s;
+
+
+
+}
+
+/* Hover Effects */
+nav a:hover {
+    color: var(--color-secondary);
+
+}
+
+/* Headings */
+h1 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+
+
+}
+
+
+p {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-sm);
+
+
+}
+
+/* Cards (Projects) */
+.card {
+    background: var(--color-white);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    border: 1px solid var(--color-accent);
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: var(--color-secondary);
+
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+}
+
+input, textarea {
+    padding: var(--space-sm);
+    border: 1px solid #423d3d;
+    border-radius: 4px;
+
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space-md);
+    border-color: #421fc4;
+
+}
+th, td {
+    border: 1px solid #b43e3e;
+    padding: var(--space-sm);
+    text-align: left;
+    border-color: #292b29;
+
+
+}
+
